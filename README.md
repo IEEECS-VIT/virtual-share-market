@@ -1,2 +1,4 @@
-# stock
-The source code repository for the stock simulator.
+# Stock Simulator
+
+a [Sails](http://sailsjs.org) application
+.idea/
