@@ -49,9 +49,9 @@
     "bcrypt": "~0.8.3"
   },
   "scripts": {
-    "debug": "node debug app.js",
-    "start": "node app.js",
-    "postinstall": "node ./node_modules/bower/bin/bower install"
+    "debug": "iojs debug app.js",
+    "start": "iojs app.js",
+    "postinstall": "iojs ./node_modules/bower/bin/bower install"
   },
   "main": "app.js",
   "repository": {
