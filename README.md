@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/IEEECS-VIT/StockSim.png?label=ready&title=Ready)](https://waffle.io/IEEECS-VIT/StockSim)
 Stock Simulator
 ===============
 
