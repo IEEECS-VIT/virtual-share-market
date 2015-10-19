@@ -1,0 +1,35 @@
+function btw0n1(p){		//[a,b)
+        q = p*-1;
+        t = Math.random()*(p-q) + q;
+        return (t);
+    }
+
+function btw0n1(p){		//(a,b)
+        q = p*-1;
+        t = Math.random()*(p-q) + q;
+	if(t==0)
+		btw0n1(p);
+	else
+		return (t);
+    }
+
+function btw0n1(p){		//(a,b]
+        q = p*-1;
+        t = Math.random()*(p-q+1) + q;
+        if(t==0)
+		btw0n1(p);
+	else
+		if(t>p)
+			return (p);
+		else
+			return (t);
+    }
+
+function btw0n1(p){		//[a,b]
+        q = p*-1;
+        t = Math.random()*(p-q+1) + q;
+        if(t>p)
+		return (p);
+	else
+		return (t);
+    }

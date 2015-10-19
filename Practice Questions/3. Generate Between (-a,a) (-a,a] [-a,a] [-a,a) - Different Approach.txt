@@ -1,0 +1,27 @@
+function btw0n1(p){			//[-a,a)
+        return (Math.random()*(2*p) - p);
+    }
+
+function btw0n1(p){			//(-a,a)
+        if(Math.random()*(2*p) - p == -1*p)
+		btw0n1(p);
+	else
+		return (Math.random()*(2*p) - p);
+    }
+
+function btw0n1(p){			//(-a,a]
+        if(Math.random()*(2*p+1) - p == -1*p)
+		btw0n1(p);
+	else
+		if(Math.random()*(2*p+1) - p >p)
+			return (p);
+		else
+			return (Math.random()*(2*p+1) - p);
+    }
+
+function btw0n1(p){			//[-a,a]
+        if(Math.random()*(2*p+1) - p>p)
+		return (p);
+	else
+		return (Math.random()*(2*p+1) - p);
+    }

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="number"></p>
+
+<script>
+
+function btw0n1(p){
+        var q;
+        q=Math.random()*(p-1);
+        if(q==0)
+            btw0n1(p);
+        else
+            return (q);
+    }
+
+
+document.getElementById("number").innerHTML = window.btw0n1(10);
+</script>
+
+</body>
+</html>
