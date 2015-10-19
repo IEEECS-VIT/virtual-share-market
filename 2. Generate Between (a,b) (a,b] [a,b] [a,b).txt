@@ -1,0 +1,39 @@
+function btw0n1(p,q){		//(a,b)
+        r = Math.max(p,q);
+        s = Math.min(p,q);
+        t = Math.random()*(r-s) + s;
+        if(t==s)
+             btw0n1(p,q);
+        else
+             return (t);
+    }
+
+function btw0n1(p,q){		//[a,b)
+        r = Math.max(p,q);
+        s = Math.min(p,q);
+        t = Math.random()*(r-s) + s;
+        return (t);
+    }
+
+function btw0n1(p,q){		//[a,b]
+        r = Math.max(p,q);
+        s = Math.min(p,q);
+        t = Math.random()*(r-s+1) + s;
+        if(t>r)
+             return (r);
+        else
+             return (t);
+    }
+
+function btw0n1(p,q){		//(a,b]
+        r = Math.max(p,q);
+        s = Math.min(p,q);
+        t = Math.random()*(r-s+1) + s;
+        if(t==s)
+             btw0n1(p,q);
+        else
+             if(t>r)
+		return (r)
+	     else
+		return (t);
+    }
